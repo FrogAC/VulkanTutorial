@@ -6,6 +6,7 @@ int main() {
     HelloTriangleApplication app;
 
     try {
+        cout << "app run" << endl;
         app.run();
     }
     catch (const std::exception& e) {
