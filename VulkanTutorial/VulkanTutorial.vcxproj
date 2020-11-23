@@ -148,7 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="hello_triangle.h" />
+    <ClCompile Include="vulkan_app.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vulkan_app.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

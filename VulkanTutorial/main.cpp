@@ -1,18 +1,21 @@
 #include <stdexcept>
+#include <iostream>
+#include "vulkan_app.h"
 
-#include "hello_triangle.h"
+class HelloTriangleApplication : public VulkanApp {
+};
 
 int main() {
-    HelloTriangleApplication app;
+	HelloTriangleApplication app;
 
-    try {
-        cout << "app run" << endl;
-        app.run();
-    }
-    catch (const std::exception& e) {
-        std::cerr << e.what() << std::endl;
-        return EXIT_FAILURE;
-    }
+	try {
+		app.run();
+	}
+	catch (const std::exception& e) {
+		std::cerr << e.what() << std::endl;
+		system("pause");
+		return EXIT_FAILURE;
+	}
 
-    return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
